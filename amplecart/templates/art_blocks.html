@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ampleCART | art blocks</title>
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="/assets/css/style-starter.css">
+    <!-- Template CSS -->
+    <link href="//fonts.googleapis.com/css?family=Oswald:300,400,500,600&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900&display=swap" rel="stylesheet">
+    <!-- Template CSS -->
+
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light"
+        style="position: fixed; width: 100%; z-index: 1000; background-color:rgb(11, 26, 43)">
+        <div class="container px-4 px-lg-5">
+            <a href="/" style="color:white; font-weight:bolder; font-size:x-large; text-decoration:none;">
+                <span style="color: rgb(20 165 162);">a</span>mpleCART</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="/accounts/products"
+                            style="color:white;">MarketPlace</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="color:white;">
+                            Categories
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            {% for category in category %}
+                            <a class="dropdown-item"
+                                href="/accounts/categoryview/{{category.category_name}}">{{category.category_name}}</a>
+                            {% endfor %}
+
+                        </div>
+                    </li>
+                </ul>
+
+                <form action="">
+                    <input type="text" placeholder="Search.." id="search" type="search" name="search"
+                        style="width: 25em;">
+                    <button type="submit" style="margin-right: 2em;"><i class="fa fa-search"></i></button>
+                </form>
+
+
+                <a href="/cart/cart">
+                    <button class="btn btn-outline-light" type="submit" style="color:white;">
+                        <i class="bi-cart-fill me-1"></i>
+                        Cart
+                        <span class="badge bg-dark text-white ms-1 rounded-pill">{{cart_count}}</span>
+                    </button>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header-->
+    <div class="col-12 bg-dark  ">
+        <img id="zoomIn" class="col-12 " src="/assets/images/artblock1.jpg"
+            style=" background-repeat:no-repeat;background-size:100%; padding-top:3rem; height: 30em;">
+    </div>
+    <section class="w3l-ecommerce-main" style="background-image: url('/assets/images/defi-unsplash.jpg');">
+        <!-- /products-->
+        <div class="ecom-contenthny py-5">
+            <div class="container py-lg-5">
+                <h3 class="hny-title mb-0 text-center"><span>Art</span> Blocks</h3>
+                <p class="text-center">Explore The Art</p>
+                <!-- /row-->
+                <div class="container py-lg-5" style="display: flex;justify-content: space-evenly;">
+                    <!-- <p class="hny-title mb-0 text-center">items</p> -->
+                    <h4 class="text-center">items<br><span style="font-weight: 100; font-size: large;">4314</span></h4>
+                    <h4 class="text-center">Owners<br><span style="font-weight: 100; font-size: large;">3110</span></h4>
+                    <h4 class="text-center">Floor Price<br><span style="font-weight: 100; font-size: large;">2525</span>
+                    </h4>
+                    <h4 class="text-center">Volume Traded<br><span
+                            style="font-weight: 100; font-size: large;">775.8K</span></h4>
+
+                </div>
+                <div class="ecom-products-grids row mt-lg-5 mt-3">
+                    <div class="col-lg-3 col-6 product-incfhny mt-4">
+                        <div class="product-grid2 transmitv">
+                            <div class="product-image2">
+                                <a href="#">
+                                    <img class="pic-1 img-fluid" src="/assets/images/frog.avif">
+                                    <img class="pic-2 img-fluid" src="/assets/images/frog.avif">
+                                </a>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
+
+                                    <li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
+                                    </li>
+                                </ul>
+                                <div class="transmitv single-item">
+                                    <form action="#" method="post">
+                                        <button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
+                                            Add to Cart
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">Greedy Morning </a></h3>
+                                <h6 style="font-family: 'Courier New', Courier, monospace;"> 6529Collections</h6>
+                                <p>Last sale: 0.333 ETH</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 product-incfhny mt-4">
+                        <div class="product-grid2 transmitv">
+                            <div class="product-image2">
+                                <a href="#">
+                                    <img class="pic-1 img-fluid" src="/assets/images/helmet.png">
+                                    <img class="pic-2 img-fluid" src="/assets/images/helmet.png">
+                                </a>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
+
+                                    <li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
+                                    </li>
+                                </ul>
+                                <div class="transmitv single-item">
+                                    <form action="#" method="post">
+                                        <button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
+                                            Add to Cart
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">Black Helmet</a></h3>
+                                <h6 style="font-family: 'Courier New', Courier, monospace;">mirza and malik</h6>
+                                <p>11/34 for sale</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 product-incfhny mt-4">
+                        <div class="product-grid2 transmitv">
+                            <div class="product-image2">
+                                <a href="#">
+                                    <img class="pic-1 img-fluid" src="/assets/images/kanpai.avif">
+                                    <img class="pic-2 img-fluid" src="/assets/images/kanpai.avif">
+                                </a>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
+
+                                    <li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
+                                    </li>
+                                </ul>
+                                <div class="transmitv single-item">
+                                    <form action="#" method="post">
+                                        <button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
+                                            Add to Cart
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">Cereal GMer </a></h3>
+                                <h6 style="font-family: 'Courier New', Courier, monospace;">The Memes by 6529</h6>
+                                <p>Last sale: 0.404 WETH</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 product-incfhny mt-4">
+                        <div class="product-grid2 transmitv">
+                            <div class="product-image2">
+                                <a href="#">
+                                    <img class="pic-1 img-fluid" src="/assets/images/signature.png">
+                                    <img class="pic-2 img-fluid" src="/assets/images/signature.png">
+                                </a>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
+
+                                    <li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
+                                    </li>
+                                </ul>
+                                <div class="transmitv single-item">
+                                    <form action="#" method="post">
+                                        <button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
+                                            Add to Cart
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">signature </a></h3>
+                                <h6 style="font-family: 'Courier New', Courier, monospace;">Ravi Bobara</h6>
+                                <p>28/74 for sale</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 product-incfhny mt-4">
+                        <div class="product-grid2 transmitv">
+                            <div class="product-image2">
+                                <a href="#">
+                                    <img class="pic-1 img-fluid" src="/assets/images/frndshipB.png">
+                                    <img class="pic-2 img-fluid" src="/assets/images/frndshipB.png">
+                                </a>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
+
+                                    <li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
+                                    </li>
+                                </ul>
+                                <div class="transmitv single-item">
+                                    <form action="#" method="post">
+                                        <button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
+                                            Add to Cart
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">#225</a></h3>
+                                <h6 style="font-family: 'Courier New', Courier, monospace;">Humor Bored Ape Club</h6>
+                                <p>Ends in 7 hours</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 product-incfhny mt-4">
+                        <div class="product-grid2 transmitv">
+                            <div class="product-image2">
+                                <a href="#">
+                                    <img class="pic-1 img-fluid" src="/assets/images/leg cutter.png">
+                                    <img class="pic-2 img-fluid" src="/assets/images/leg cutter.png">
+                                </a>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
+
+                                    <li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
+                                    </li>
+                                </ul>
+                                <div class="transmitv single-item">
+                                    <form action="#" method="post">
+                                        <button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
+                                            Add to Cart
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">Leg Cutter </a></h3>
+                                <h6 style="font-family: 'Courier New', Courier, monospace;">The Golden Duck</h6>
+                                <p>14/45 for sale</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 product-incfhny mt-4">
+                        <div class="product-grid2 transmitv">
+                            <div class="product-image2">
+                                <a href="#">
+                                    <img class="pic-1 img-fluid" src="/assets/images/khuga.avif">
+                                    <img class="pic-2 img-fluid" src="/assets/images/khuga.avif">
+                                </a>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
+
+                                    <li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
+                                    </li>
+                                </ul>
+                                <div class="transmitv single-item">
+                                    <form action="#" method="post">
+                                        <button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
+                                            Add to Cart
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">#2781</a></h3>
+                                <h6 style="font-family: 'Courier New', Courier, monospace;">Humor Bored Ape Club</h6>
+                                <p>Sales Ends in 2 hours</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 product-incfhny mt-4">
+                        <div class="product-grid2 transmitv">
+                            <div class="product-image2">
+                                <a href="#">
+                                    <img class="pic-1 img-fluid" src="/assets/images/mirza.webp">
+                                    <img class="pic-2 img-fluid" src="/assets/images/mirza.webp">
+                                </a>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
+
+                                    <li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
+                                    </li>
+                                </ul>
+                                <div class="transmitv single-item">
+                                    <form action="#" method="post">
+                                        <button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
+                                            Add to Cart
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">Meta Mirza </a></h3>
+                                <h6 style="font-family: 'Courier New', Courier, monospace;">Mirza & Malik</h6>
+                                <p>210/450 for sale</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 product-incfhny mt-4">
+                        <div class="product-grid2 transmitv">
+                            <div class="product-image2">
+                                <a href="#">
+                                    <img class="pic-1 img-fluid" src="/assets/images/check birds.avif">
+                                    <img class="pic-2 img-fluid" src="/assets/images/check birds.avif">
+                                </a>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
+
+                                    <li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
+                                    </li>
+                                </ul>
+                                <div class="transmitv single-item">
+                                    <form action="#" method="post">
+                                        <button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
+                                            Add to Cart
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">Check Birds#3266</a></h3>
+                                <h6 style="font-family: 'Courier New', Courier, monospace;">Check Birds</h6>
+                                <p>0.0083 ETH</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 product-incfhny mt-4">
+                        <div class="product-grid2 transmitv">
+                            <div class="product-image2">
+                                <a href="#">
+                                    <img class="pic-1 img-fluid" src="/assets/images/soothing summer.webp">
+                                    <img class="pic-2 img-fluid" src="/assets/images/soothing summer.webp">
+                                </a>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
+
+                                    <li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
+                                    </li>
+                                </ul>
+                                <div class="transmitv single-item">
+                                    <form action="#" method="post">
+                                        <button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
+                                            Add to Cart
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">Soothing Summer </a></h3>
+                                <h6 style="font-family: 'Courier New', Courier, monospace;">Mohamed Amir</h6>
+                                <p>21/75 for sale</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 product-incfhny mt-4">
+                        <div class="product-grid2 transmitv">
+                            <div class="product-image2">
+                                <a href="#">
+                                    <img class="pic-1 img-fluid" src="/assets/images/mint.avif">
+                                    <img class="pic-2 img-fluid" src="/assets/images/mint.avif">
+                                </a>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
+
+                                    <li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
+                                    </li>
+                                </ul>
+                                <div class="transmitv single-item">
+                                    <form action="#" method="post">
+                                        <button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
+                                            Add to Cart
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">Check Birds#4112 </a></h3>
+                                <h6 style="font-family: 'Courier New', Courier, monospace;">Check Birds</h6>
+                                <p>0.0071 ETH</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 product-incfhny mt-4">
+                        <div class="product-grid2 transmitv">
+                            <div class="product-image2">
+                                <a href="#">
+                                    <img class="pic-1 img-fluid" src="/assets/images/shatterd reality.png">
+                                    <img class="pic-2 img-fluid" src="/assets/images/shatterd reality.png">
+                                </a>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
+
+                                    <li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
+                                    </li>
+                                </ul>
+                                <div class="transmitv single-item">
+                                    <form action="#" method="post">
+                                        <button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
+                                            Add to Cart
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">shatterd reality </a></h3>
+                                <h6 style="font-family: 'Courier New', Courier, monospace;">Hershelle Gibbs</h6>
+                                <p>211/550 for sale</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 product-incfhny mt-4">
+                        <div class="product-grid2 transmitv">
+                            <div class="product-image2">
+                                <a href="#">
+                                    <img class="pic-1 img-fluid" src="/assets/images/gazer.png">
+                                    <img class="pic-2 img-fluid" src="/assets/images/gazer.png">
+                                </a>
+                                <ul class="social">
+                                    <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
+
+                                    <li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
+                                    </li>
+                                </ul>
+                                <div class="transmitv single-item">
+                                    <form action="#" method="post">
+                                        <button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
+                                            Add to Cart
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">Gazer</a></h3>
+                                <h6 style="font-family: 'Courier New', Courier, monospace;">Hershelle Gibbs</h6>
+                                <p>41/94 for sale</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //row-->
+                </div>
+            </div>
+    </section>
+    <!-- //products-->
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div style="width: 200px;">
+            <a href="https://instagram.com/afrin_moh_d" target="_blank" rel="noreferrer noopener"
+                data-test-id="footer-instagram" style="display: flex; justify-content: space-evenly;">
+                <i class="fa fa-instagram fa-lg" aria-hidden="true" style="color: white;"></i>
+                <i class="fa fa-twitter fa-lg" aria-hidden="true" style="color: white;"></i>
+                <i class="fa fa-facebook fa-lg" aria-hidden="true" style="color: white;"></i>
+                <i class="fa fa-telegram fa-lg" aria-hidden="true" style="color: white;"></i>
+            </a>
+        </div>
+
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright © 2022 ampleCART.com. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    <!-- Core theme JS-->
+    <!-- <script src="js/scripts.js"></script> -->
+</body>
+
+</html>
+
+
+<script>
+    function addtocart(id) {
+        $.ajax({
+            url: '/cart/addtocart/' + id,
+            method: 'get',
+            success: (response) => {
+                console.log(response.status)
+                if (response.status) {
+
+                    swal('Item added to Cart');
+                }
+            }
+        })
+    }
+</script>
+
+<script>
+    function finalurl2() {
+        var url = new URL(window.location.href);
+        var search_params = url.searchParams;
+        search_params.set('price', document.getElementById("price-list").value);
+        url.search = search_params.toString();
+        var new_url = url.toString();
+        return new_url
+    }
+</script>
+
+<script>
+    $('.plus-watchlist').click(function () {
+        var id = $(this).attr("pid").toString();
+        $.ajax({
+            type: "GET",
+            url: "/cart/addToWatchlist",
+            data: {
+                prod_id: id
+            },
+            success: (response) => {
+                console.log(response.status)
+                if (response.status) {
+
+                    swal('Item added to watchlist').then(() => {
+                        location.reload();
+                    })
+                }
+            }
+        })
+    })
+    $('.minus-watchlist').click(function () {
+        var id = $(this).attr("pid").toString();
+        $.ajax({
+            type: "GET",
+            url: "/cart/removeFromWatchlist",
+            data: {
+                prod_id: id
+            },
+            success: (response) => {
+                console.log(response.status)
+                if (response.status) {
+
+                    swal('Item removed from watchlist').then(() => {
+                        location.reload();
+                    })
+
+                }
+            }
+        })
+    })
+</script>

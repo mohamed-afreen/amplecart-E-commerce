@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>ampleCART | Blogs</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+
+   <!-- bootstrap css -->
+   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+   <link rel="stylesheet" type="text/css" href="/assets/blogs/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" type="text/css" href="/assets/blogs/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="/assets/blogs/responsive.css">
+
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <!-- owl stylesheets -->
+
+   <link rel="stylesoeet" href="css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen">
+</head>
+
+<body>
+   <!-- header section start -->
+   <div class="header_section">
+      <div class="container-fluid header_main">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="logo" href="/" style="text-transform:none; font-size: 2em;padding-left: 15rem;">
+               <span style="color: rgb(20 165 162);">a</span>mpleCART | BLOGS<br>
+               <p style="color: black; font-family :robo;">NFT-Marketplace</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                     <a class="nav-link" href="/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="/accounts/products">Marketplace</a>
+                  </li>
+                  {% if user.is_authenticated %}
+                  <li class="nav-item">
+                     <a class="nav-link" href="/accounts/my_profile">
+                        <span class="fa fa-user" aria-hidden="true"></span>
+                        {{user.username}}
+                     </a>
+                  </li>
+                  {% else %}
+                  <li class="nav-item">
+                     <a class="nav-link" href="accounts/user_login">
+                        <span id="account" aria-hidden="true">SignIn</span>
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="accounts/sign_up">
+                        <span id="account" aria-hidden="true">SignUp</span>
+                     </a>
+                  </li>
+                  {% endif %}
+               </ul>
+            </div>
+         </nav>
+      </div>
+      <!-- banner section start -->
+      <div class="container-fluid">
+         <div class="banner_section layout_padding">
+            <h1 class="banner_taital">welcome <br>our blog</h1>
+            <div id="my_slider" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="image_main">
+                        <div class="container">
+                           <img src="/assets/images/carousel-1.jpeg" class="image_1">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="image_main">
+                        <div class="container">
+                           <img src="/assets/images/carousel-2 (1).png" class="image_1">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="image_main">
+                        <div class="container">
+                           <img src="/assets/images/carousel-3 (1).jpeg" class="image_1">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="image_main">
+                        <div class="container">
+                           <img src="/assets/images/carousel-4 (1).jpeg" class="image_1">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
+                  <i class="fa fa-angle-left"></i>
+               </a>
+               <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
+                  <i class="fa fa-angle-right"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+      <!-- banner section end -->
+   </div>
+
+   <!-- /category section starts -->
+   <div style="float: left; width: 100%;">
+      <h1 class="mb-0 text-center" style="font-weight: bold; font-size: xxx-large;"><span
+            style="color: rgb(20 165 162);">C</span>ategories</h1>
+      <div class="welcome-grids row mt-5" style="justify-content: center;">
+         <div class="col-lg-2 col-md-4 col-6 welcome-image">
+            <h3 style="font-size: x-large; font-weight: 700;"><a href="#URL">Product</a></h3>
+         </div>
+
+         <div class="col-lg-2 col-md-4 col-6 welcome-image">
+            <h3 style="font-size: x-large; font-weight: 700;"><a href="#URL">Company</a></h3>
+         </div>
+
+         <div class="col-lg-2 col-md-4 col-6 welcome-image">
+            <h3 style="font-size: x-large; font-weight: 700;"><a href="#URL">Community</a></h3>
+         </div>
+
+         <div class="col-lg-2 col-md-4 col-6 welcome-image">
+            <h3 style="font-size: x-large; font-weight: 700;"><a href="#URL">Creator</a></h3>
+         </div>
+      </div>
+   </div>
+   <!-- //category section ends -->
+
+   <!-- about section start -->
+   <div class="about_section layout_padding">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-8 col-sm-12">
+               <div class="col-lg-8 col-sm-12" style="padding-bottom: 1em;">
+                  <button type="button" class="btn btn-primary">Product</button>
+                  <button type="button" class="btn btn-primary" style="margin-left: 15px;">Developer</button>
+               </div>
+               <div class="about_img"><img src="/assets/images/blog1.jpeg"></div>
+               <p class="post_text">June 06, 2022</p>
+
+               <div class="social_icon_main">
+                  <div class="social_icon">
+                     <ul>
+                        <li><a href="#"><img src="/assets/images/fb-icon.png"></a></li>
+                        <li><a href="#"><img src="/assets/images/twitter-icon.png"></a></li>
+                        <li><a href="#"><img src="/assets/images/instagram-icon.png"></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+               <h2 class="most_text">Launching Seaport & Saving the Community Millions in Fees</h2>
+               <p class="about_text">Today, OpenSea is migrating to Seaport, a new web3 marketplace protocol designed
+                  for safely and efficiently buying and selling NFTs. Seaport is a game changer ...</p>
+               <div class="read_bt_1"><a href="#">Read More</a></div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- about section end -->
+   <!-- blog section start -->
+   <div class="about_section layout_padding">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-8 col-sm-12">
+               <div class="col-lg-8 col-sm-12" style="padding-bottom: 1em;">
+                  <button type="button" class="btn btn-primary">Product</button>
+                  <button type="button" class="btn btn-primary" style="margin-left: 15px;">Drops</button>
+               </div>
+               <div class="about_img"><img src="/assets/images/blog2.png"></div>
+               <p class="post_text">September 19, 2022</p>
+               <div class="social_icon_main">
+                  <div class="social_icon">
+                     <ul>
+                        <li><a href="#"><img src="/assets/images/fb-icon.png"></a></li>
+                        <li><a href="#"><img src="/assets/images/twitter-icon.png"></a></li>
+                        <li><a href="#"><img src="/assets/images/instagram-icon.png"></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+               <h2 class="most_text">Drops on OpenSea: An Immersive and Secure Minting Experience</h2>
+               <p class="about_text">Since our founding in 2017, OpenSea has become the best place to explore the vast
+                  world of NFTs. As we continue to grow, our vision is to create a home for cre...</p>
+               <div class="read_bt_1"><a href="#">Read More</a></div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- blog section end -->
+   <!-- newsletter section start -->
+   <div class="about_section layout_padding">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-8 col-sm-12">
+               <div class="col-lg-8 col-sm-12" style="padding-bottom: 1em;">
+                  <button type="button" class="btn btn-primary">Product</button>
+                  <button type="button" class="btn btn-primary" style="margin-left: 15px;">Drops</button>
+               </div>
+               <div class="about_img"><img src="/assets/images/blog3.jpeg"></div>
+               <p class="post_text">July 18, 2022</p>
+               <div class="social_icon_main">
+                  <div class="social_icon">
+                     <ul>
+                        <li><a href="#"><img src="/assets/images/fb-icon.png"></a></li>
+                        <li><a href="#"><img src="/assets/images/twitter-icon.png"></a></li>
+                        <li><a href="#"><img src="/assets/images/instagram-icon.png"></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+               <h2 class="most_text">Announcing OpenSea’s Solana Launchpad</h2>
+               <p class="about_text">We believe in a multi-chain future where people on OpenSea have access to NFTs
+                  across a vast number of blockchains. In the last year, Solana has emerged among ...</p>
+               <div class="read_bt_1"><a href="#">Read More</a></div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- newsletter section end -->
+   <!-- recent section start -->
+   <div class="about_section layout_padding">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-8 col-sm-12">
+               <div class="col-lg-8 col-sm-12" style="padding-bottom: 1em;">
+                  <button type="button" class="btn btn-primary">Company</button>
+                  <button type="button" class="btn btn-primary" style="margin-left: 15px;">Trust and Safety</button>
+               </div>
+               <div class="about_img"><img src="/assets/images/blog4.jpeg"></div>
+               <p class="post_text">June 29, 2022</p>
+               <div class="social_icon_main">
+                  <div class="social_icon">
+                     <ul>
+                        <li><a href="#"><img src="/assets/images/fb-icon.png"></a></li>
+                        <li><a href="#"><img src="/assets/images/twitter-icon.png"></a></li>
+                        <li><a href="#"><img src="/assets/images/instagram-icon.png"></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+               <h2 class="most_text">Important Update on Email Vendor Security Incident</h2>
+               <p class="about_text">We recently learned that an employee of Customer.io, our email delivery vendor,
+                  misused their employee access to download and share email addresses with an unauthorized external
+                  party. If you have shared your email with OpenSea in the past, you should assume you were impacted. We
+                  are working with Customer.io in their ongoing investigation,
+                  and we have reported this incident to law enforcement.</p>
+               <div class="read_bt_1"><a href="#">Read More</a></div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- recent section end -->
+
+   <div class="about_section layout_padding">
+      <div class="container" style="display: flex; justify-content:flex-end;">
+         <div class="col-lg-8 col-sm-12" style="padding-bottom: 1em;">
+            <button type="button" class="btn">Previous</button>
+            <button type="button" class="btn" style="margin-left: 4px;">1</button>
+            <button type="button" class="btn" style="margin-left: 4px;">2</button>
+            <button type="button" class="btn" style="margin-left: 4px;">Next</button>
+         </div>
+      </div>
+   </div>
+
+   <!-- footer section start -->
+   <div class="footer_section layout_padding">
+      <div class="container">
+         <div class="footer_menu">
+            <ul>
+               <li><a href="/">Home</a></li>
+               <li><a href="blogs">Blog</a></li>
+               <li><a href="/accounts/my_profile">My Profile</a></li>
+               <li><a href="/accounts/products">Marketplace</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   <!-- footer section end -->
+   <!-- copyright section start -->
+   <div class="copyright_section">
+      <div class="container">
+         <p class="copyright_text">Copyright 2022 All Right Reserved By.ampleCART</p>
+      </div>
+   </div>
+   <!-- copyright section end -->
+   <!-- Javascript files-->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/jquery-3.0.0.min.js"></script>
+   <script src="js/plugin.js"></script>
+   <!-- sidebar -->
+   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="js/custom.js"></script>
+   <!-- javascript -->
+   <script src="js/owl.carousel.js"></script>
+   <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+</body>
+
+</html>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+   integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+   integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

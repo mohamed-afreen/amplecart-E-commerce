@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ampleCART | login</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <section
+    style="background-image: url('https://crypto.com/nft/assets/images/signup/sign-up-background.jpg'); background-repeat:no-repeat;background-size:100%;">
+
+    <a href="/" style="color: white;
+      text-decoration: none;
+      font-size: larger;
+      font-weight: 800;
+      margin-left:10px;">
+
+      ampleCART | NFT-Marketplace
+    </a>
+
+    <div class="container" style="height: 59.3rem;">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-lg-12 col-xl-11">
+          <div class="card text-black" style="background:transparent; color:white">
+            <div class="card-body p-md-5">
+              <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+
+                  <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign Up or Log In</p>
+
+                  <form class="mx-1 mx-md-4" action="user_login" method="POST">
+                    {% csrf_token %}
+
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <input class="form-control" type="name" name="username" placeholder="User name" id="name"
+                          onkeyup="validateName()">
+                      </div>
+                    </div>
+
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <input class="form-control" type="password" name="password" placeholder="Password" id="password"
+                          onkeyup="validatePassword()">
+                      </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                      <button type="submit" class="btn btn-primary btn-lg">LogIn</button>
+                    </div>
+
+                    {% for message in messages %}
+                    <div class="alert
+                      alert-warning
+                      alert-dismissible fade show
+                      " role="alert">
+                      {{message}}
+                    </div>
+                    {% endfor %}
+
+                  </form>
+
+                  <div class="text-center p-t-5">
+                    <a class="txt2" href="sign_up">
+                      Don't have an account? <span style="color: white;">Sign Up</span>
+                      <!-- <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i> -->
+                    </a>
+                  </div>
+
+                </div>
+                <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+
+                  <img src="https://hotpot.ai/images/site/ai/art_maker/teaser.jpg" class="img-fluid" alt="Sample image">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+</body>
+
+</html>
