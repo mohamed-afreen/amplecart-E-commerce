@@ -32,7 +32,7 @@ DEBUG = config('DEBUG', cast=bool, default=True)
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['easycaer.tech','13.232.225.171', 'localhost']
 
 
 # Application definition
@@ -101,7 +101,8 @@ DATABASES = {
         'NAME': 'amplecart_db',
         'USER': 'postgres',
         'PASSWORD': '2468',
-        'HOST': 'localhost'
+        'HOST': 'localhost',
+        'port': '',
     }
 }
 
