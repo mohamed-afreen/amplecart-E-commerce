@@ -32,7 +32,7 @@ DEBUG = config('DEBUG', cast=bool, default=True)
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
 
-ALLOWED_HOSTS = ['easycaer.tech','13.232.225.171', 'localhost']
+ALLOWED_HOSTS = ['easycart.tech','13.232.225.171', 'localhost']
 
 
 # Application definition
@@ -102,7 +102,7 @@ DATABASES = {
         'USER': 'postgres',
         'PASSWORD': '2468',
         'HOST': 'localhost',
-        'port': '',
+        'PORT': '',
     }
 }
 
