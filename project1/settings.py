@@ -28,11 +28,11 @@ AUTH_TOKEN = config('AUTH_TOKEN')
 SECRET_KEY = 'django-insecure-^tz%w=jue01m9-(psfch7%@+0a_pz0c()z*-1a^w&6i5$a8r1y'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', cast=bool, default=True)
+DEBUG = config('DEBUG', cast=bool, default=False)
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
 
-ALLOWED_HOSTS = ['easycart.tech','13.232.225.171', 'localhost']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -97,7 +97,7 @@ WSGI_APPLICATION = 'project1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'amplecart_db',
         'USER': 'postgres',
         'PASSWORD': '2468',
