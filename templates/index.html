@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="zxx">
 
@@ -6,9 +7,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>ampleCART-nft marketplace</title>
-	<link rel="icon" type="image/x-icon" href="assets/images/logo.png">
+	<!-- <link rel="icon" type="image/x-icon" href="assets/images/logo.png"> -->
+
+	<link rel="icon" type="image/x-icon" href="{% static '/images/logo.png' %}">
+
+
 	<!-- Template CSS -->
-	<link rel="stylesheet" href="/assets/css/style-starter.css">
+	<link rel="stylesheet" href="{% static '/css/style-starter.css' %}">
 	<!-- Template CSS -->
 	<link href="//fonts.googleapis.com/css?family=Oswald:300,400,500,600&display=swap" rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900&display=swap" rel="stylesheet">
@@ -240,7 +245,7 @@
 					<div class="col-lg-2 col-md-4 col-6 welcome-image">
 						<div class="boxhny13">
 							<a href="#URL">
-								<img src="assets/images/grid1.jpg" class="img-fluid" alt="" />
+								<img src="{% static '/images/grid1.jpg' %}" class="img-fluid" alt="" />
 								<div class="boxhny-content">
 									<h3 class="title">NFT
 								</div>
@@ -253,7 +258,7 @@
 					<div class="col-lg-2 col-md-4 col-6 welcome-image">
 						<div class="boxhny13">
 							<a href="#URL">
-								<img src="assets/images/grid3.jpg" class="img-fluid" alt="" />
+								<img src="{% static '/images/grid3.jpg' %}" class="img-fluid" alt="" />
 								<div class="boxhny-content">
 									<h3 class="title">NFT</h3>
 								</div>
@@ -267,7 +272,7 @@
 					<div class="col-lg-2 col-md-4 col-6 welcome-image">
 						<div class="boxhny13">
 							<a href="#URL">
-								<img src="assets/images/grid2.jpg" class="img-fluid" alt="" />
+								<img src="{% static '/images/grid2.jpg' %}" class="img-fluid" alt="" />
 								<div class="boxhny-content">
 									<h3 class="title">NFT</h3>
 								</div>
@@ -280,7 +285,7 @@
 					<div class="col-lg-2 col-md-4 col-6 welcome-image">
 						<div class="boxhny13">
 							<a href="#URL">
-								<img src="assets/images/grid4.jpg" class="img-fluid" alt="" />
+								<img src="{% static '/images/grid4.jpg' %}" class="img-fluid" alt="" />
 								<div class="boxhny-content">
 									<h3 class="title">NFT</h3>
 								</div>
@@ -292,7 +297,7 @@
 					<div class="col-lg-2 col-md-4 col-6 welcome-image">
 						<div class="boxhny13">
 							<a href="#URL">
-								<img src="assets/images/grid5.jpg" class="img-fluid" alt="" />
+								<img src="{% static '/images/grid5.jpg' %}" class="img-fluid" alt="" />
 								<div class="boxhny-content">
 									<h3 class="title">NFT</h3>
 								</div>
@@ -306,7 +311,7 @@
 					<div class="col-lg-2 col-md-4 col-6 welcome-image">
 						<div class="boxhny13">
 							<a href="#URL">
-								<img src="assets/images/grid6.jpg" class="img-fluid" alt="" />
+								<img src="{% static '/images/grid6.jpg' %}" class="img-fluid" alt="" />
 								<div class="boxhny-content">
 									<h3 class="title">NFT</h3>
 								</div>
@@ -338,7 +343,7 @@
 						</a>
 					</div>
 					<div class="photo-6-inf-left col-lg-6">
-						<img src="/assets/images/defi1.jpg" class="img-fluid" alt="">
+						<img src="{% static '/images/defi1.jpg' %}" class="img-fluid" alt="">
 					</div>
 				</div>
 			</div>
@@ -352,7 +357,7 @@
 			<div class="container py-lg-5">
 				<div class="align-photo-6-inf-cols row">
 					<div class="photo-6-inf-left col-lg-6">
-						<img src="/assets/images/artblock1.jpg" class="img-fluid" alt="">
+						<img src="{% static '/images/artblock1.jpg' %}" class="img-fluid" alt="">
 					</div>
 
 					<div class="photo-6-inf-right col-lg-6">
@@ -447,7 +452,7 @@
 					<div class="col-lg-3 col-md-6 grids5-info column-img" id="zoomIn">
 						<a href="#">
 							<figure>
-								<img class="img-fluid" src="/assets/images/blog1.jpeg" alt="blog-image">
+								<img class="img-fluid" src="{% static '/images/blog1.jpeg' %}" alt="blog-image">
 							</figure>
 						</a>
 
@@ -464,7 +469,7 @@
 					<div class="col-lg-3 col-md-6 grids5-info column-img" id="zoomIn">
 						<a href="#">
 							<figure>
-								<img class="img-fluid" src="/assets/images/blog2.png" alt="blog-image">
+								<img class="img-fluid" src="{% static '/images/blog2.png' %}" alt="blog-image">
 							</figure>
 						</a>
 						<div class="blog-thumbhny-caption">
@@ -478,7 +483,7 @@
 					</div>
 					<div class="col-lg-3 col-md-6 grids5-info column-img" id="zoomIn">
 						<figure>
-							<img class="img-fluid" src="/assets/images/blog3.jpeg" alt="blog-image">
+							<img class="img-fluid" src="{% static '/images/blog3.jpeg' %}" alt="blog-image">
 						</figure>
 						<div class="blog-thumbhny-caption">
 							<ul class="blog-info-list">
@@ -491,7 +496,7 @@
 
 					<div class="col-lg-3 col-md-6 grids5-info column-img" id="zoomIn">
 						<figure>
-							<img class="img-fluid" src="/assets/images/blog4.jpeg" alt="blog-image">
+							<img class="img-fluid" src="{% static '/images/blog4.jpeg' %}" alt="blog-image">
 						</figure>
 						<div class="blog-thumbhny-caption">
 							<ul class="blog-info-list">
@@ -683,4 +688,4 @@
 	});
 </script>
 <!-- disable body scroll which navbar is in active -->
-<script src="assets/js/bootstrap.min.js"></script>
+<script src="{% static '/js/bootstrap.min.js' %}"></script>

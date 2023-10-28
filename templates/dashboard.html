@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en" dir="ltr">
 
@@ -10,10 +11,10 @@
    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
    <!-- Library / Plugin Css Build -->
-   <link rel="stylesheet" href="/assets/assets/css/core/libs.min.css" />
+   <link rel="stylesheet" href="{% static '/assets/css/core/libs.min.css' %}" />
 
    <!-- dashboard Design Css -->
-   <link rel="stylesheet" href="/assets/assets/css/hope-ui.min.css" />
+   <link rel="stylesheet" href="{% static '/assets/css/hope-ui.min.css' %}" />
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -262,7 +263,7 @@
                      <li class="nav-item dropdown">
                         <a class="py-0 nav-link d-flex align-items-center" href="#" id="navbarDropdown" role="button"
                            data-bs-toggle="dropdown" aria-expanded="false">
-                           <img src="/assets/assets/images/avatars/avtar_1.png" alt="User-Profile"
+                           <img src="{% static '/assets/images/avatars/avtar_1.png' %}" alt="User-Profile"
                               class="theme-color-default-img img-fluid avatar avatar-50 avatar-rounded">
                            <div class="caption ms-3 d-none d-md-block ">
                               <h6>{{user.username}}</h6>
@@ -496,19 +497,19 @@
 
 
          <!-- Library Bundle Script -->
-         <script src="/assets/assets/js/core/libs.min.js"></script>
+         <script src="{% static '/assets/js/core/libs.min.js' %}"></script>
 
          <!-- External Library Bundle Script -->
-         <script src="/assets/assets/js/core/external.min.js"></script>.
+         <script src="{% static '/assets/js/core/external.min.js' %}"></script>.
 
 
 
          <!-- mapchart Script -->
-         <script src="/assets/assets/js/charts/dashboard.js"></script>
+         <script src="{% static '/assets/js/charts/dashboard.js' %}"></script>
 
 
          <!-- App Script -->
-         <script src="/assets/assets/js/hope-ui.js" defer></script>
+         <script src="{% static '/assets/js/hope-ui.js' %}" defer></script>
 
          <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
          <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script>
