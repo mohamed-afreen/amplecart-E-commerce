@@ -138,10 +138,14 @@
 										Categories
 									</a>
 									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
 										{% for category in category %}
-										<a class="dropdown-item"
-											href="/accounts/categoryview/{{category.category_name}}">{{category.category_name}}</a>
+											{% if category.category_name %}
+											<a class="dropdown-item"
+												href="/accounts/categoryview/{{category.category_name}}">{{category.category_name}}</a>
+											
+											{% else %}
+											<a class="nav-link" href="/">Home</a>
+											{% endif %}
 										{% endfor %}
 
 									</div>
