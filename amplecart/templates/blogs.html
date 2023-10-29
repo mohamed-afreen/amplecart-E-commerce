@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,11 +18,11 @@
 
    <!-- bootstrap css -->
    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-   <link rel="stylesheet" type="text/css" href="/assets/blogs/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="{% static 'blogs/bootstrap.min.css' %}">
    <!-- style css -->
-   <link rel="stylesheet" type="text/css" href="/assets/blogs/style.css">
+   <link rel="stylesheet" type="text/css" href="{% static 'blogs/style.css' %}">
    <!-- Responsive-->
-   <link rel="stylesheet" href="/assets/blogs/responsive.css">
+   <link rel="stylesheet" href="{% static 'blogs/responsive.css' %}">
 
    <!-- Tweaks for older IEs-->
    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
@@ -85,28 +86,28 @@
                   <div class="carousel-item active">
                      <div class="image_main">
                         <div class="container">
-                           <img src="/assets/images/carousel-1.jpeg" class="image_1">
+                           <img src="{% static 'images/carousel-1.jpeg' %}" class="image_1">
                         </div>
                      </div>
                   </div>
                   <div class="carousel-item">
                      <div class="image_main">
                         <div class="container">
-                           <img src="/assets/images/carousel-2 (1).png" class="image_1">
+                           <img src="{% static 'images/carousel-2 (1).png' %}" class="image_1">
                         </div>
                      </div>
                   </div>
                   <div class="carousel-item">
                      <div class="image_main">
                         <div class="container">
-                           <img src="/assets/images/carousel-3 (1).jpeg" class="image_1">
+                           <img src="{% static 'images/carousel-3 (1).jpeg' %}" class="image_1">
                         </div>
                      </div>
                   </div>
                   <div class="carousel-item">
                      <div class="image_main">
                         <div class="container">
-                           <img src="/assets/images/carousel-4 (1).jpeg" class="image_1">
+                           <img src="{% static 'images/carousel-4 (1).jpeg' %}" class="image_1">
                         </div>
                      </div>
                   </div>
@@ -156,15 +157,15 @@
                   <button type="button" class="btn btn-primary">Product</button>
                   <button type="button" class="btn btn-primary" style="margin-left: 15px;">Developer</button>
                </div>
-               <div class="about_img"><img src="/assets/images/blog1.jpeg"></div>
+               <div class="about_img"><img src="{% static 'images/blog1.jpeg' %}"></div>
                <p class="post_text">June 06, 2022</p>
 
                <div class="social_icon_main">
                   <div class="social_icon">
                      <ul>
-                        <li><a href="#"><img src="/assets/images/fb-icon.png"></a></li>
-                        <li><a href="#"><img src="/assets/images/twitter-icon.png"></a></li>
-                        <li><a href="#"><img src="/assets/images/instagram-icon.png"></a></li>
+                        <li><a href="#"><img src="{% static 'images/fb-icon.png' %}"></a></li>
+                        <li><a href="#"><img src="{% static 'images/twitter-icon.png' %}"></a></li>
+                        <li><a href="#"><img src="{% static 'images/instagram-icon.png' %}"></a></li>
                      </ul>
                   </div>
                </div>
@@ -188,14 +189,14 @@
                   <button type="button" class="btn btn-primary">Product</button>
                   <button type="button" class="btn btn-primary" style="margin-left: 15px;">Drops</button>
                </div>
-               <div class="about_img"><img src="/assets/images/blog2.png"></div>
+               <div class="about_img"><img src="{% static 'images/blog2.png' %}"></div>
                <p class="post_text">September 19, 2022</p>
                <div class="social_icon_main">
                   <div class="social_icon">
                      <ul>
-                        <li><a href="#"><img src="/assets/images/fb-icon.png"></a></li>
-                        <li><a href="#"><img src="/assets/images/twitter-icon.png"></a></li>
-                        <li><a href="#"><img src="/assets/images/instagram-icon.png"></a></li>
+                        <li><a href="#"><img src="{% static 'images/fb-icon.png' %}"></a></li>
+                        <li><a href="#"><img src="{% static 'images/twitter-icon.png' %}"></a></li>
+                        <li><a href="#"><img src="{% static 'images/instagram-icon.png' %}"></a></li>
                      </ul>
                   </div>
                </div>
@@ -219,14 +220,14 @@
                   <button type="button" class="btn btn-primary">Product</button>
                   <button type="button" class="btn btn-primary" style="margin-left: 15px;">Drops</button>
                </div>
-               <div class="about_img"><img src="/assets/images/blog3.jpeg"></div>
+               <div class="about_img"><img src="{% static 'images/blog3.jpeg' %}"></div>
                <p class="post_text">July 18, 2022</p>
                <div class="social_icon_main">
                   <div class="social_icon">
                      <ul>
-                        <li><a href="#"><img src="/assets/images/fb-icon.png"></a></li>
-                        <li><a href="#"><img src="/assets/images/twitter-icon.png"></a></li>
-                        <li><a href="#"><img src="/assets/images/instagram-icon.png"></a></li>
+                        <li><a href="#"><img src="{% static 'images/fb-icon.png' %}"></a></li>
+                        <li><a href="#"><img src="{% static 'images/twitter-icon.png' %}"></a></li>
+                        <li><a href="#"><img src="{% static 'images/instagram-icon.png' %}"></a></li>
                      </ul>
                   </div>
                </div>
@@ -250,14 +251,14 @@
                   <button type="button" class="btn btn-primary">Company</button>
                   <button type="button" class="btn btn-primary" style="margin-left: 15px;">Trust and Safety</button>
                </div>
-               <div class="about_img"><img src="/assets/images/blog4.jpeg"></div>
+               <div class="about_img"><img src="{% static 'images/blog4.jpeg' %}"></div>
                <p class="post_text">June 29, 2022</p>
                <div class="social_icon_main">
                   <div class="social_icon">
                      <ul>
-                        <li><a href="#"><img src="/assets/images/fb-icon.png"></a></li>
-                        <li><a href="#"><img src="/assets/images/twitter-icon.png"></a></li>
-                        <li><a href="#"><img src="/assets/images/instagram-icon.png"></a></li>
+                        <li><a href="#"><img src="{% static 'images/fb-icon.png' %}"></a></li>
+                        <li><a href="#"><img src="{% static 'images/twitter-icon.png' %}"></a></li>
+                        <li><a href="#"><img src="{% static 'images/instagram-icon.png' %}"></a></li>
                      </ul>
                   </div>
                </div>

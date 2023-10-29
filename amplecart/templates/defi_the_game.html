@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +15,7 @@
     <!-- fontawesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Template CSS -->
-    <link rel="stylesheet" href="/assets/css/style-starter.css">
+    <link rel="stylesheet" href="{% static 'css/style-starter.css' %}">
     <!-- Template CSS -->
     <link href="//fonts.googleapis.com/css?family=Oswald:300,400,500,600&display=swap" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900&display=swap" rel="stylesheet">
@@ -73,10 +74,10 @@
 
     <!-- Header-->
     <div class="col-12 bg-dark  ">
-        <img id="zoomIn" class="col-12 " src="/assets/images/defi+bg.jpeg.jpg"
+        <img id="zoomIn" class="col-12 " src="{% static 'images/defi+bg.jpeg.jpg' %}"
             style=" background-repeat:no-repeat;background-size:100%; padding-top:3rem; height: 30em;">
     </div>
-    <section class="w3l-ecommerce-main" style="background-image: url('/assets/images/defi-unsplash.jpg');">
+    <section class="w3l-ecommerce-main" style="background-image: url('/static/images/defi-unsplash.jpg');">
         <!-- /products-->
         <div class="ecom-contenthny py-5">
             <div class="container py-lg-5">
@@ -98,8 +99,8 @@
                         <div class="product-grid2 transmitv">
                             <div class="product-image2">
                                 <a href="#">
-                                    <img class="pic-1 img-fluid" src="/assets/images/maiden over.jpeg">
-                                    <img class="pic-2 img-fluid" src="/assets/images/maiden over.jpeg">
+                                    <img class="pic-2 img-fluid" src="{% static 'images/maiden over.jpeg' %}">
+                                    <img class="pic-1 img-fluid" src="{% static 'images/maiden over.jpeg' %}">
                                 </a>
                                 <ul class="social">
                                     <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
@@ -128,8 +129,8 @@
                         <div class="product-grid2 transmitv">
                             <div class="product-image2">
                                 <a href="#">
-                                    <img class="pic-1 img-fluid" src="/assets/images/helmet.png">
-                                    <img class="pic-2 img-fluid" src="/assets/images/helmet.png">
+                                    <img class="pic-1 img-fluid" src="{% static 'images/helmet.png' %}">
+                                    <img class="pic-2 img-fluid" src="{% static 'images/helmet.png' %}">
                                 </a>
                                 <ul class="social">
                                     <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
@@ -158,8 +159,8 @@
                         <div class="product-grid2 transmitv">
                             <div class="product-image2">
                                 <a href="#">
-                                    <img class="pic-1 img-fluid" src="/assets/images/carlos.webp">
-                                    <img class="pic-2 img-fluid" src="/assets/images/carlos.webp">
+                                    <img class="pic-1 img-fluid" src="{% static 'images/carlos.webp' %}">
+                                    <img class="pic-2 img-fluid" src="{% static 'images/carlos.webp' %}">
                                 </a>
                                 <ul class="social">
                                     <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
@@ -188,8 +189,8 @@
                         <div class="product-grid2 transmitv">
                             <div class="product-image2">
                                 <a href="#">
-                                    <img class="pic-1 img-fluid" src="/assets/images/signature.png">
-                                    <img class="pic-2 img-fluid" src="/assets/images/signature.png">
+                                    <img class="pic-1 img-fluid" src="{% static 'images/signature.png' %}">
+                                    <img class="pic-2 img-fluid" src="{% static 'images/signature.png' %}">
                                 </a>
                                 <ul class="social">
                                     <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
@@ -218,8 +219,8 @@
                         <div class="product-grid2 transmitv">
                             <div class="product-image2">
                                 <a href="#">
-                                    <img class="pic-1 img-fluid" src="/assets/images/tabletea.png">
-                                    <img class="pic-2 img-fluid" src="/assets/images/tabletea.png">
+                                    <img class="pic-1 img-fluid" src="{% static 'images/tabletea.png' %}">
+                                    <img class="pic-2 img-fluid" src="{% static 'images/tabletea.png' %}">
                                 </a>
                                 <ul class="social">
                                     <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
@@ -248,8 +249,8 @@
                         <div class="product-grid2 transmitv">
                             <div class="product-image2">
                                 <a href="#">
-                                    <img class="pic-1 img-fluid" src="/assets/images/leg cutter.png">
-                                    <img class="pic-2 img-fluid" src="/assets/images/leg cutter.png">
+                                    <img class="pic-1 img-fluid" src="{% static 'images/leg cutter.png' %}">
+                                    <img class="pic-2 img-fluid" src="{% static 'images/leg cutter.png' %}">
                                 </a>
                                 <ul class="social">
                                     <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
@@ -278,8 +279,8 @@
                         <div class="product-grid2 transmitv">
                             <div class="product-image2">
                                 <a href="#">
-                                    <img class="pic-1 img-fluid" src="/assets/images/pants0ff.png">
-                                    <img class="pic-2 img-fluid" src="/assets/images/pants0ff.png">
+                                    <img class="pic-1 img-fluid" src="{% static 'images/pants0ff.png' %}">
+                                    <img class="pic-2 img-fluid" src="{% static 'images/pants0ff.png' %}">
                                 </a>
                                 <ul class="social">
                                     <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
@@ -308,8 +309,8 @@
                         <div class="product-grid2 transmitv">
                             <div class="product-image2">
                                 <a href="#">
-                                    <img class="pic-1 img-fluid" src="/assets/images/mirza.webp">
-                                    <img class="pic-2 img-fluid" src="/assets/images/mirza.webp">
+                                    <img class="pic-1 img-fluid" src="{% static 'images/mirza.webp' %}">
+                                    <img class="pic-2 img-fluid" src="{% static 'images/mirza.webp' %}">
                                 </a>
                                 <ul class="social">
                                     <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
@@ -338,8 +339,8 @@
                         <div class="product-grid2 transmitv">
                             <div class="product-image2">
                                 <a href="#">
-                                    <img class="pic-1 img-fluid" src="/assets/images/trident.webp">
-                                    <img class="pic-2 img-fluid" src="/assets/images/trident.webp">
+                                    <img class="pic-1 img-fluid" src="{% static 'images/trident.webp' %}">
+                                    <img class="pic-2 img-fluid" src="{% static 'images/trident.webp' %}">
                                 </a>
                                 <ul class="social">
                                     <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
@@ -368,8 +369,8 @@
                         <div class="product-grid2 transmitv">
                             <div class="product-image2">
                                 <a href="#">
-                                    <img class="pic-1 img-fluid" src="/assets/images/soothing summer.webp">
-                                    <img class="pic-2 img-fluid" src="/assets/images/soothing summer.webp">
+                                    <img class="pic-1 img-fluid" src="{% static 'images/soothing summer.webp' %}">
+                                    <img class="pic-2 img-fluid" src="{% static 'images/soothing summer.webp' %}">
                                 </a>
                                 <ul class="social">
                                     <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
@@ -398,8 +399,8 @@
                         <div class="product-grid2 transmitv">
                             <div class="product-image2">
                                 <a href="#">
-                                    <img class="pic-1 img-fluid" src="/assets/images/amir.webp">
-                                    <img class="pic-2 img-fluid" src="/assets/images/amir.webp">
+                                    <img class="pic-1 img-fluid" src="{% static 'images/amir.webp' %}">
+                                    <img class="pic-2 img-fluid" src="{% static 'images/amir.webp' %}">
                                 </a>
                                 <ul class="social">
                                     <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
@@ -428,8 +429,8 @@
                         <div class="product-grid2 transmitv">
                             <div class="product-image2">
                                 <a href="#">
-                                    <img class="pic-1 img-fluid" src="/assets/images/shatterd reality.png">
-                                    <img class="pic-2 img-fluid" src="/assets/images/shatterd reality.png">
+                                    <img class="pic-1 img-fluid" src="{% static 'images/shatterd reality.png' %}">
+                                    <img class="pic-2 img-fluid" src="{% static 'images/shatterd reality.png' %}">
                                 </a>
                                 <ul class="social">
                                     <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
@@ -458,8 +459,8 @@
                         <div class="product-grid2 transmitv">
                             <div class="product-image2">
                                 <a href="#">
-                                    <img class="pic-1 img-fluid" src="/assets/images/adoration.jpeg">
-                                    <img class="pic-2 img-fluid" src="/assets/images/adoration.jpeg">
+                                    <img class="pic-1 img-fluid" src="{% static 'images/adoration.jpeg' %}">
+                                    <img class="pic-2 img-fluid" src="{% static 'images/adoration.jpeg' %}">
                                 </a>
                                 <ul class="social">
                                     <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>

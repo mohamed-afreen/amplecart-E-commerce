@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +15,7 @@
     <!-- fontawesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Template CSS -->
-    <link rel="stylesheet" href="/assets/css/style-starter.css">
+    <link rel="stylesheet" href="{% static 'css/style-starter.css' %}">
     <!-- Template CSS -->
     <link href="//fonts.googleapis.com/css?family=Oswald:300,400,500,600&display=swap" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900&display=swap" rel="stylesheet">
@@ -73,10 +74,10 @@
 
     <!-- Header-->
     <div class="col-12 bg-dark  ">
-        <img id="zoomIn" class="col-12 " src="/assets/images/artblock1.jpg"
+        <img id="zoomIn" class="col-12 " src="{% static 'images/artblock1.jpg' %}"
             style=" background-repeat:no-repeat;background-size:100%; padding-top:3rem; height: 30em;">
     </div>
-    <section class="w3l-ecommerce-main" style="background-image: url('/assets/images/defi-unsplash.jpg');">
+    <section class="w3l-ecommerce-main" style="background-image: url('/static/images/defi-unsplash.jpg');">
         <!-- /products-->
         <div class="ecom-contenthny py-5">
             <div class="container py-lg-5">
@@ -98,8 +99,8 @@
                         <div class="product-grid2 transmitv">
                             <div class="product-image2">
                                 <a href="#">
-                                    <img class="pic-1 img-fluid" src="/assets/images/frog.avif">
-                                    <img class="pic-2 img-fluid" src="/assets/images/frog.avif">
+                                    <img class="pic-1 img-fluid" src="{% static 'images/frog.avif' %}">
+                                    <img class="pic-2 img-fluid" src="{% static 'images/frog.avif' %}">
                                 </a>
                                 <ul class="social">
                                     <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
@@ -128,8 +129,8 @@
                         <div class="product-grid2 transmitv">
                             <div class="product-image2">
                                 <a href="#">
-                                    <img class="pic-1 img-fluid" src="/assets/images/helmet.png">
-                                    <img class="pic-2 img-fluid" src="/assets/images/helmet.png">
+                                    <img class="pic-1 img-fluid" src="{% static 'images/helmet.png' %}">
+                                    <img class="pic-2 img-fluid" src="{% static 'images/helmet.png' %}">
                                 </a>
                                 <ul class="social">
                                     <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
@@ -156,8 +157,8 @@
                         <div class="product-grid2 transmitv">
                             <div class="product-image2">
                                 <a href="#">
-                                    <img class="pic-1 img-fluid" src="/assets/images/kanpai.avif">
-                                    <img class="pic-2 img-fluid" src="/assets/images/kanpai.avif">
+                                    <img class="pic-1 img-fluid" src="{% static 'images/kanpai.avif' %}">
+                                    <img class="pic-2 img-fluid" src="{% static 'images/kanpai.avif' %}">
                                 </a>
                                 <ul class="social">
                                     <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
@@ -186,8 +187,8 @@
                         <div class="product-grid2 transmitv">
                             <div class="product-image2">
                                 <a href="#">
-                                    <img class="pic-1 img-fluid" src="/assets/images/signature.png">
-                                    <img class="pic-2 img-fluid" src="/assets/images/signature.png">
+                                    <img class="pic-1 img-fluid" src="{% static 'images/signature.png' %}">
+                                    <img class="pic-2 img-fluid" src="{% static 'images/signature.png' %}">
                                 </a>
                                 <ul class="social">
                                     <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
@@ -216,8 +217,8 @@
                         <div class="product-grid2 transmitv">
                             <div class="product-image2">
                                 <a href="#">
-                                    <img class="pic-1 img-fluid" src="/assets/images/frndshipB.png">
-                                    <img class="pic-2 img-fluid" src="/assets/images/frndshipB.png">
+                                    <img class="pic-1 img-fluid" src="{% static 'images/frndshipB.png' %}">
+                                    <img class="pic-2 img-fluid" src="{% static 'images/frndshipB.png' %}">
                                 </a>
                                 <ul class="social">
                                     <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
@@ -246,8 +247,8 @@
                         <div class="product-grid2 transmitv">
                             <div class="product-image2">
                                 <a href="#">
-                                    <img class="pic-1 img-fluid" src="/assets/images/leg cutter.png">
-                                    <img class="pic-2 img-fluid" src="/assets/images/leg cutter.png">
+                                    <img class="pic-1 img-fluid" src="{% static 'images/leg cutter.png' %}">
+                                    <img class="pic-2 img-fluid" src="{% static 'images/leg cutter.png' %}">
                                 </a>
                                 <ul class="social">
                                     <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
@@ -276,8 +277,8 @@
                         <div class="product-grid2 transmitv">
                             <div class="product-image2">
                                 <a href="#">
-                                    <img class="pic-1 img-fluid" src="/assets/images/khuga.avif">
-                                    <img class="pic-2 img-fluid" src="/assets/images/khuga.avif">
+                                    <img class="pic-1 img-fluid" src="{% static 'images/khuga.avif' %}">
+                                    <img class="pic-2 img-fluid" src="{% static 'images/khuga.avif' %}">
                                 </a>
                                 <ul class="social">
                                     <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
@@ -306,8 +307,8 @@
                         <div class="product-grid2 transmitv">
                             <div class="product-image2">
                                 <a href="#">
-                                    <img class="pic-1 img-fluid" src="/assets/images/mirza.webp">
-                                    <img class="pic-2 img-fluid" src="/assets/images/mirza.webp">
+                                    <img class="pic-1 img-fluid" src="{% static 'images/mirza.webp' %}">
+                                    <img class="pic-2 img-fluid" src="{% static 'images/mirza.webp' %}">
                                 </a>
                                 <ul class="social">
                                     <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
@@ -336,8 +337,8 @@
                         <div class="product-grid2 transmitv">
                             <div class="product-image2">
                                 <a href="#">
-                                    <img class="pic-1 img-fluid" src="/assets/images/check birds.avif">
-                                    <img class="pic-2 img-fluid" src="/assets/images/check birds.avif">
+                                    <img class="pic-1 img-fluid" src="{% static 'images/check birds.avif' %}">
+                                    <img class="pic-2 img-fluid" src="{% static 'images/check birds.avif' %}">
                                 </a>
                                 <ul class="social">
                                     <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
@@ -366,8 +367,8 @@
                         <div class="product-grid2 transmitv">
                             <div class="product-image2">
                                 <a href="#">
-                                    <img class="pic-1 img-fluid" src="/assets/images/soothing summer.webp">
-                                    <img class="pic-2 img-fluid" src="/assets/images/soothing summer.webp">
+                                    <img class="pic-1 img-fluid" src="{% static 'images/soothing summer.webp' %}">
+                                    <img class="pic-2 img-fluid" src="{% static 'images/soothing summer.webp' %}">
                                 </a>
                                 <ul class="social">
                                     <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
@@ -396,8 +397,8 @@
                         <div class="product-grid2 transmitv">
                             <div class="product-image2">
                                 <a href="#">
-                                    <img class="pic-1 img-fluid" src="/assets/images/mint.avif">
-                                    <img class="pic-2 img-fluid" src="/assets/images/mint.avif">
+                                    <img class="pic-1 img-fluid" src="{% static 'images/mint.avif' %}">
+                                    <img class="pic-2 img-fluid" src="{% static 'images/mint.avif' %}">
                                 </a>
                                 <ul class="social">
                                     <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
@@ -426,8 +427,8 @@
                         <div class="product-grid2 transmitv">
                             <div class="product-image2">
                                 <a href="#">
-                                    <img class="pic-1 img-fluid" src="/assets/images/shatterd reality.png">
-                                    <img class="pic-2 img-fluid" src="/assets/images/shatterd reality.png">
+                                    <img class="pic-1 img-fluid" src="{% static 'images/shatterd reality.png' %}">
+                                    <img class="pic-2 img-fluid" src="{% static 'images/shatterd reality.png' %}">
                                 </a>
                                 <ul class="social">
                                     <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
@@ -456,8 +457,8 @@
                         <div class="product-grid2 transmitv">
                             <div class="product-image2">
                                 <a href="#">
-                                    <img class="pic-1 img-fluid" src="/assets/images/gazer.png">
-                                    <img class="pic-2 img-fluid" src="/assets/images/gazer.png">
+                                    <img class="pic-1 img-fluid" src="{% static 'images/gazer.png' %}">
+                                    <img class="pic-2 img-fluid" src="{% static 'images/gazer.png' %}">
                                 </a>
                                 <ul class="social">
                                     <li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
