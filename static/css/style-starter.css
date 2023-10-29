@@ -4116,7 +4116,7 @@ a.read-more-btn2.btn:hover {
 }
 
 .w3l-banner-slider-main .right-banner {
-  background: url(/assets/images/left4.jpg) no-repeat center;
+  background: url(/static/images/left4.jpg) no-repeat center;
   background-size: cover;
   display: grid;
   align-items: center;
@@ -6918,7 +6918,7 @@ iframe {
 }
 
 .w3l-subscription-6 .subscription-left {
-  background: url(/assets/images/newsletter.png) no-repeat center;
+  background: url(/static/images/newsletter.png) no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -6985,7 +6985,7 @@ iframe {
 @media (max-width: 1080px) {
   .w3l-subscription-6 .subscription-left {
     min-height: 36em;
-    background: url(/assets/images/newsletter.png) no-repeat center;
+    background: url(/static/images/newsletter.png) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -6997,7 +6997,7 @@ iframe {
 @media (max-width: 480px) {
   .w3l-subscription-6 .subscription-left {
     min-height: 17em;
-    background: url(/assets/images/newsletter.png) no-repeat center;
+    background: url(/static/images/newsletter.png) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
